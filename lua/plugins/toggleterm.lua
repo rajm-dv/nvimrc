@@ -7,12 +7,12 @@ return {
 			shade_terminals = true,
 		})
 
-		vim.keymap.set("n", "<C-B>", function()
+		vim.keymap.set("n", "<C-b>", function()
 			local filename = vim.fn.expand("%:p")
 			local root = "/mnt/d/CP"
 			local exe = root .. "/a.exe"
 			local cmd = string.format(
-				'g++ -std=c++23 -O2 -Wall "%s" -o "%s" && "%s" < "%s/input.txt" > "%s/output.txt" && type "%s/output.txt"',
+				'g++ -std=c++23 -O2 -Wall "%s" -o "%s" && "%s" < "%s/input.txt" > "%s/output.txt" && cat "%s/output.txt"',
 				filename,
 				exe,
 				exe,
