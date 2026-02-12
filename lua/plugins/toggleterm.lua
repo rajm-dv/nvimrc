@@ -9,7 +9,7 @@ return {
 
 		vim.keymap.set("n", "<C-B>", function()
 			local filename = vim.fn.expand("%:p")
-			local root = "D:/CP"
+			local root = "/mnt/d/CP"
 			local exe = root .. "/a.exe"
 			local cmd = string.format(
 				'g++ -std=c++23 -O2 -Wall "%s" -o "%s" && "%s" < "%s/input.txt" > "%s/output.txt" && type "%s/output.txt"',

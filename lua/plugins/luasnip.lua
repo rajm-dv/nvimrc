@@ -7,7 +7,7 @@ return {
 		local luasnip = require("luasnip")
 
 		require("luasnip.loaders.from_vscode").lazy_load()
-		require("luasnip.loaders.from_lua").load({ paths = "C:/Users/rajma/AppData/Local/nvim/luasnippets" })
+		require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/luasnippets" })
 
 		vim.keymap.set({ "i", "s" }, "<Tab>", function()
 			if luasnip.expand_or_jumpable() then
