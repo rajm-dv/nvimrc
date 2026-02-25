@@ -13,8 +13,10 @@ return {
         null_ls.builtins.formatting.black,
         null_ls.builtins.formatting.isort,
         null_ls.builtins.completion.spell,
-        require("none-ls.diagnostics.eslint_d"),
         null_ls.builtins.diagnostics.golangci_lint,
+        null_ls.builtins.diagnostics.pylint,
+        null_ls.builtins.diagnostics.stylelint,
+        require("none-ls.diagnostics.eslint_d"),
       },
     })
 
